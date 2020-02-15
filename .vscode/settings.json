@@ -2,6 +2,13 @@
     "files.associations": {
         "ostream": "cpp",
         "utility": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "algorithm": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "xlocnum": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp"
     }
 }
