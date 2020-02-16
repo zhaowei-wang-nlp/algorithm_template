@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 const int M = 100010;
-int e[M], ne[M], head = -1, idx = 0;//要记得初始化
+int e[M], ne[M], head = -1, idx = 0;//要记得初始化 head 和 idx
 void insert_to_head(int x)
 {
     e[idx] = x; ne[idx] = head; head = idx; idx ++;
