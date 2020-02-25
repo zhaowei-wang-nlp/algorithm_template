@@ -27,6 +27,7 @@ void quick_sort(int q[], int l, int r){
     quick_sort(q, j + 1, r);
 }
 int main(){
+    cout << a << " " << b << " " << c << " " << d; 
     scanf("%d", &n);
     for(int i = 0; i < n; i ++ ) scanf("%d", &q[i]);
     quick_sort(q, 0, n-1);

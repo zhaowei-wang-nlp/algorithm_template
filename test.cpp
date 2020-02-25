@@ -1,9 +1,19 @@
 #include<iostream>
+#include<vector>
+using namespace std;
+class abc
+{
+    public:
+        int l = 1;
+};
 int main()
 {
-    float a;
-    printf("%d", -3 % 3);
-    printf("%d", -4 % 3);
+    vector<abc> a;
+    abc b;
+    a.push_back(b);
+    b.l = 2;
+    printf("%d", a.back().l);
+    printf("%d", b.l);
     system("pause");
     return 0;
 }
