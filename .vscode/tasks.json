@@ -1,19 +1,20 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "cpp.exe build active file",
-            "command": "D:\\MinGW\\bin\\g++.exe",
+            "label": "g++",
+            "command": "g++",
             "args": [
-                "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-g",
             ],
-            "options": {
-                "cwd": "D:\\MinGW\\bin"
+            "type": "shell",
+            "group": {
+                "kind": "test",
+                "isDefault": true
             }
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
