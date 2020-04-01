@@ -3,6 +3,7 @@ using namespace std;
 const int N = 10010, M = 100010;
 char s[M], p[N];//字符串从1开始
 int ne[N] = {1, 1};//要初始化ne[1],ne[0]是多少无所谓
+//ne[i]保存的是当前i个字符匹配,第i+1个字符失配的时候,最长相等的真前缀和真后缀
 int main()
 {
     int m, n;

@@ -21,7 +21,7 @@ int main()
     scanf("%d", &m);
     for(int i = 0; i < m; i ++)
     {
-        cin >> c;//c是字符型，别错写成整数
+        cin >> c;//c是字符型，别错写成整数, 使用scanf(" %c")读取字符，或者是cin
         if(c == 'H')
         {
             scanf("%d", &x);
