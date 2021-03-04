@@ -16,7 +16,7 @@ int bsearch_2(int l, int r)
     {
         int mid = l + r + 1 >> 1;
         if (check_low(mid)) l = mid;
-        else r = mid -1;
+        else r = mid - 1;
     }
     return l;
 }

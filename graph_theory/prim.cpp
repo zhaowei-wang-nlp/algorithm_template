@@ -12,7 +12,6 @@ void add(int a, int b, int c)
 int main()
 {
     memset(h, -1, sizeof h);
-    memset(dist, 0x3f, sizeof dist);
     scanf("%d%d", &n, &m);
     while(m--)
     {
@@ -21,6 +20,7 @@ int main()
         add(a, b, c);
         add(b, a, c);
     }
+    memset(dist, 0x3f, sizeof dist);
     dist[1] = 0;
     int res = 0;
     for(int i = 0; i < n; i ++)
